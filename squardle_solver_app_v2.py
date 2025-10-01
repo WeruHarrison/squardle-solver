@@ -1,4 +1,3 @@
-
 import streamlit as st
 from itertools import product
 from collections import defaultdict
@@ -73,9 +72,9 @@ def group_by_length(words):
 
 
 # --- Streamlit UI ---
-st.title("🔤 Boggle Word Finder (Optimized with Prefix Pruning)")
+st.title("🔤 Boggle Word Finder")
 
-st.markdown("Enter letters for each cell. Only A-Z letters allowed. Case-insensitive.")
+st.markdown("Enter letters for each cell. Only A-Z letters allowed.")
 
 # --- Choose board size ---
 board_size = st.number_input("Board size (e.g. 4 for 4x4):", min_value=2, max_value=10, value=4, step=1)
